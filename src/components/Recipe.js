@@ -31,11 +31,8 @@ const Recipe = ({ article }) => {
                 </div>
 
             </div>
-
         </div>
     )
 }
 
-
 export default Recipe
-
