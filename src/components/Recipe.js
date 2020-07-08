@@ -8,7 +8,7 @@ const Recipe = ({ article }) => {
     const { recipename, recipeImage, ingredients, howToNotPrepare } = article.fields
     const postDescription1 = marked(howToNotPrepare)
     return (
-        <div className='container m-4 p-4 recipe shadow-sm p-3 mb-5 rounded '>
+        <div className='container m-4 p-4 recipe shadow-sm p-3 mb-5 rounded'>
             <h2 className='pb-4 text-capitalize'>{recipename}</h2>
             <hr />
             {recipeImage && <img className='shadow-sm p-3 rounded w-75' src={recipeImage.fields.file.url} alt={recipename} title={recipename} />}
