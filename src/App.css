@@ -6,3 +6,9 @@ body {
 .fa-github-square {
   font-size: 2rem;
 }
+
+.logo {
+  width: 3rem;
+  height: auto;
+  display: inline-block;
+}
