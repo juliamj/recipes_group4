@@ -3,7 +3,7 @@ import marked from 'marked'  //will take markdown as an input and it will output
 
 
 const Recipe = ({ article }) => {
-    console.log(article)
+    console.log(article+'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
     const { recipename, recipeImage, ingredients, howToNotPrepare } = article.fields
     const postDescription1 = marked(howToNotPrepare)
     return (
@@ -11,7 +11,7 @@ const Recipe = ({ article }) => {
             <h2 className='title'>{recipename}</h2>
             {recipeImage && <img className='recipeImage' src={recipeImage.fields.file.url} alt={recipename} title={recipename} />}
             <ul>
-                {ingredients.map((ingredient) => 
+                {ingredients.map((ingredient) =>
                     <li>{ingredient}</li>
                 )}
             </ul>
@@ -20,6 +20,4 @@ const Recipe = ({ article }) => {
     )
 }
 
-
 export default Recipe
-
