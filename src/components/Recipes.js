@@ -16,7 +16,8 @@ const Recipes = ({recipes}) => {
             className="owl-theme"
             loop
             nav
-            margin={5} >
+            margin={5}
+            singleItem={true} >
             {recipes.map((article, index) =>
                <div className='item' key={index}>
                 <Recipe article={article} />
