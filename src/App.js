@@ -21,11 +21,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className='container'>
-          <header class="m-4 mx-auto">
+        <div className='container m-4'>
+          <header>
 
           <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-            <a class="navbar-brand text-uppercase text-warning" href="#RecipesBlogHome">Juicy Recipes <i class="fas fa-lemon"></i></a>
+            <span class="navbar-brand text-uppercase text-warning">Juicy Recipes <i class="fas fa-lemon"></i></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,6 +51,22 @@ class App extends React.Component {
             <Recipes recipes={this.state.articles} />
           </div></main>
         </div>
+        {/* FOOTER */}
+        {/* <footer class="m-4"> */}
+        <ul class="nav navbar navbar-expand-lg navbar-light bg-danger m-4">
+          <li class="nav-item">
+            <span class="nav-link" href="#">Impressum</span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link" href="#">Copyright 2020</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/juliamj/recipes_group4"><i class="fab fa-github-square text-warning"></i></a>
+          </li>
+        </ul>
+        
+        {/* </footer> */}
+        
       </div>
     );
   }

@@ -2,3 +2,7 @@ body {
   background-image: url("citrus_bg.png");
   background-size: 100vw;
 }
+
+.fa-github-square {
+  font-size: 2rem;
+}
