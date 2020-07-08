@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.recipe {
+  background-color: #f3f35e3a;
+}
+
+.description {
+  background-color: #e6a12011;
+}
