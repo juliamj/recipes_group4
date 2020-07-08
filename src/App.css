@@ -5,6 +5,9 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  max-width: 1100px; /*to center website content*/
+  margin: auto; /*to center website content*/
+
 }
 
 
