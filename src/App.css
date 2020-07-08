@@ -1,6 +1,10 @@
 body {
   background-image: url("citrus_bg.png");
-  background-size: 100vw;
+  /* background-size: 100vw; */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 
