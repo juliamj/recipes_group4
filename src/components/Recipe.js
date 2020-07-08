@@ -1,5 +1,6 @@
-import React from 'react'
-import marked from 'marked'  //will take markdown as an input and it will output an html string that can be used in jsx
+import React from 'react';
+import marked from 'marked';
+//will take markdown as an input and it will output an html string that can be used in jsx
 
 
 const Recipe = ({ article }) => {
