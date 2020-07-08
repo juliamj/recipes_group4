@@ -8,6 +8,12 @@ body {
   font-size: 2rem;
 }
 
+.logo {
+  width: 3rem;
+  height: auto;
+  display: inline-block;
+}
+
 .recipe {
   background-color: rgba(226, 213, 29, 0.267);
 }
