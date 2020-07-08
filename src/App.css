@@ -7,3 +7,11 @@ body {
 .fa-github-square {
   font-size: 2rem;
 }
+
+.recipe {
+  background-color: rgba(226, 213, 29, 0.267);
+}
+
+.description {
+  background-color: rgba(216, 156, 25, 0.089);
+}
