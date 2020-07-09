@@ -9,13 +9,14 @@ const Recipe = ({ article }) => {
     const postDescription1 = marked(howToNotPrepare)
     return (
         <div className='container m-4 p-4 recipe shadow-sm p-3 mb-5 rounded'>
-            <h2 className='pb-4 text-capitalize'>{recipename}</h2>
+            <h2 className='pb-4 text-capitalize d-flex justify-content-center'>{recipename}</h2>
             <hr />
+            <div className="d-flex justify-content-center">
+
             {recipeImage && <img className='shadow-sm p-3 rounded w-75' src={recipeImage.fields.file.url} alt={recipename} title={recipename} />}
+            </div>
 
-            <div className="row m-3">  
-              {/* d-flex  w-75 p-3 m-3 bg-info p-3 flex-row justify-content-end*/}
-
+            <div className="row m-3 d-flex justify-content-center">  
                 <div className="col-lg-2 mr-1 shadow-sm p-3 rounded description">
                     <h5 className="pt-3 pb-2 text-left">Ingredients</h5>
                     <ul className="list-unstyled">
