@@ -18,6 +18,7 @@ class App extends React.Component {
       })
       .catch(console.error)
   }
+  
   render() {
     return (
       <div className="App">
@@ -64,9 +65,9 @@ class App extends React.Component {
             <a class="nav-link" href="https://github.com/juliamj/recipes_group4"><i class="fab fa-github-square text-warning"></i></a>
           </li>
         </ul>
-        
+
         {/* </footer> */}
-        
+
       </div>
     );
   }
