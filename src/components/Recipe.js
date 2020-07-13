@@ -8,7 +8,7 @@ const Recipe = ({ article }) => {
     const { recipename, recipeImage, ingredients, howToNotPrepare } = article.fields
     const postDescription1 = marked(howToNotPrepare)
     return (
-        <div className='container m-4 p-4 recipe shadow-sm p-3 mb-5 rounded'>
+        <div className='container mt-4 p-4 recipe border-rounded shadow-sm p-3 rounded'>
             <h2 className='pb-4 text-capitalize d-flex justify-content-center'>{recipename}</h2>
             <hr />
             <div className="d-flex justify-content-center">
