@@ -10,7 +10,6 @@ body {
 
 }
 
-
 .fa-github-square {
   font-size: 2rem;
 }
@@ -27,4 +26,12 @@ body {
 
 .description {
   background-color: rgba(216, 156, 25, 0.089);
+}
+
+.carousel-control-next-icon {
+  padding: 20px;
+}
+
+.carousel-control-prev-icon {
+  padding: 20px;
 }
