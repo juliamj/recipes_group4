@@ -54,7 +54,8 @@ class App extends React.Component {
         </div>
         {/* FOOTER */}
         {/* <footer class="m-4"> */}
-        <ul className="nav navbar navbar-expand-lg navbar-light bg-danger m-4">
+        <div className="container m-4">
+        <ul className="nav navbar navbar-expand-lg navbar-light bg-danger">
           <li className="nav-item">
             <span className="nav-link" href="#">Impressum</span>
           </li>
@@ -65,6 +66,7 @@ class App extends React.Component {
             <a className="nav-link" href="https://github.com/juliamj/recipes_group4"><i className="fab fa-github-square text-warning"></i></a>
           </li>
         </ul>
+        </div>
 
         {/* </footer> */}
 
