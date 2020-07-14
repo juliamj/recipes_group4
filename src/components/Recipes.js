@@ -17,11 +17,9 @@ const Recipes = ({recipes}) => {
             {recipes.map((article, index) => {
               return (
                 <Carousel.Item>
-                <span className="carousel-control-prev-icon" />
                 <div key={index}>
                 <Recipe article={article} />
                 </div>
-                <span className="carousel-control-next-icon" />
                 </Carousel.Item>
               )})}
         </Carousel>
