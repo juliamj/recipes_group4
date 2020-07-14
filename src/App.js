@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { Client } from './Client';
 import Recipes from './components/Recipes';
+import About from './components/About'
+import { NavLink, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
   state = {
@@ -34,10 +36,10 @@ class App extends React.Component {
             <div className="collapse navbar-collapse" id="navbarColor03">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#Recipes">Recipes<span className="sr-only">(current)</span></a>
+                  <NavLink className="nav-link" to="/">Recipes<span className="sr-only">(current)</span></NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#About">About</a>
+                  <NavLink className="nav-link" to="/About">About</NavLink>
                 </li>
               </ul>
               <form className="form-inline my-2 my-lg-0">
@@ -48,10 +50,20 @@ class App extends React.Component {
 
           </nav>
           </header>
-          <main><div className='wrapper'>
+
+          {/* MAIN CONTENT */}
+          <main>
+          <Switch>
+            <Route exact path="/" ><Recipes recipes={this.state.articles} /></Route>
+            <Route exact path="/About" ><About/></Route>
+          </Switch>
+
+          {/* <div className='wrapper'>
             <Recipes recipes={this.state.articles} />
-          </div></main>
-        </div>
+          </div> */}
+          </main> 
+        
+
         {/* FOOTER */}
         {/* <footer class="m-4"> */}
         <div className="container m-4">
@@ -69,7 +81,7 @@ class App extends React.Component {
         </div>
 
         {/* </footer> */}
-
+</div>
       </div>
     );
   }
