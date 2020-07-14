@@ -17,16 +17,16 @@ const Recipe = ({ article }) => {
             </div>
 
             <div className="row m-3 d-flex justify-content-center">  
-                <div className="ingredients col-lg-2 mr-1 shadow-sm p-3 border  rounded">
+                <div className="ingredients col-lg-3 mr-1 shadow-sm p-3 border  rounded">
                     <h5 className="pt-3 pb-2 text-left">Ingredients</h5>
                     <ul className="list-unstyled">
                         {ingredients.map((ingredient) =>
-                            <li className="text-left">{ingredient}</li>
+                            <li className="text-left pb-2 pl-3">{ingredient}</li>
                         )}
                     </ul>
                 </div>
 
-                <div className="col-lg-9 ml-1 shadow-sm p-3 border  rounded description">
+                <div className="col-lg-8 ml-1 shadow-sm p-3 border  rounded description">
                     <h5 className="text-capitalize pt-3 pb-2">How to not prepare</h5>
                     <section dangerouslySetInnerHTML={{ __html: postDescription1 }} />
                 </div>
