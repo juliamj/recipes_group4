@@ -17,7 +17,7 @@ const Recipe = ({ article }) => {
             </div>
 
             <div className="row m-3 d-flex justify-content-center">  
-                <div className="ingredients col-lg-3 mr-1 shadow-sm p-3 border  rounded">
+                <div className="ingredients col-lg-3 mr-1 mb-1 shadow-sm p-3 border rounded">
                     <h5 className="pt-3 pb-2 text-left">Ingredients</h5>
                     <ul className="list-unstyled">
                         {ingredients.map((ingredient) =>
@@ -26,7 +26,7 @@ const Recipe = ({ article }) => {
                     </ul>
                 </div>
 
-                <div className="col-lg-8 ml-1 shadow-sm p-3 border  rounded description">
+                <div className="col-lg-8 mr-1 mb-1 shadow-sm p-3 border  rounded description">
                     <h5 className="text-capitalize pt-3 pb-2">How to not prepare</h5>
                     <section dangerouslySetInnerHTML={{ __html: postDescription1 }} />
                 </div>
