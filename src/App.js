@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { Client } from './Client';
 import Recipes from './components/Recipes';
+import About from './components/About'
+import { NavLink, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
   state = {
@@ -26,7 +28,7 @@ class App extends React.Component {
           <header>
 
           <nav className="navbar navbar-expand-lg navbar-light bg-danger">
-            <span className="navbar-brand text-uppercase text-warning">Juicy Recipes <i className="fas fa-lemon"></i></span>
+            <span className="navbar-brand text-uppercase text-warning">How Not To Cook <i className="fas fa-lemon"></i></span>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -34,10 +36,10 @@ class App extends React.Component {
             <div className="collapse navbar-collapse" id="navbarColor03">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#Recipes">Recipes<span className="sr-only">(current)</span></a>
+                  <NavLink className="nav-link" to="/">Recipes<span className="sr-only">(current)</span></NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#About">About</a>
+                  <NavLink className="nav-link" to="/About">About</NavLink>
                 </li>
               </ul>
               <form className="form-inline my-2 my-lg-0">
@@ -48,10 +50,20 @@ class App extends React.Component {
 
           </nav>
           </header>
-          <main><div className='wrapper'>
+
+          {/* MAIN CONTENT */}
+          <main>
+          <Switch>
+            <Route exact path="/" ><Recipes recipes={this.state.articles} /></Route>
+            <Route exact path="/About" ><About/></Route>
+          </Switch>
+
+          {/* <div className='wrapper'>
             <Recipes recipes={this.state.articles} />
-          </div></main>
-        </div>
+          </div> */}
+          </main> 
+        
+
         {/* FOOTER */}
         {/* <footer class="m-4"> */}
         <div className="container m-4">
@@ -63,13 +75,13 @@ class App extends React.Component {
             <span className="nav-link" href="#">Copyright 2020</span>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://github.com/juliamj/recipes_group4"><i className="fab fa-github-square text-warning"></i></a>
+            <a className="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/juliamj/recipes_group4"><i className="fab fa-github-square text-warning"></i></a>
           </li>
         </ul>
         </div>
 
         {/* </footer> */}
-
+</div>
       </div>
     );
   }
