@@ -8,16 +8,16 @@ const Recipe = ({ article }) => {
     const { recipename, recipeImage, ingredients, howToNotPrepare } = article.fields
     const postDescription1 = marked(howToNotPrepare)
     return (
-        <div className='container mt-4 p-4 recipe border-rounded shadow-sm p-3 rounded'>
-            <h2 className='pb-4 text-capitalize d-flex justify-content-center'>{recipename}</h2>
-            <hr />
+        <div className='container mt-4 p-5 recipe shadow-sm border border-dark rounded-circle'>
+            <h2 className='pb-2 pt-2 text-capitalize d-flex justify-content-center'>{recipename}</h2>
+            {/* <hr /> */}
             <div className="d-flex justify-content-center">
 
-            {recipeImage && <img className='shadow-sm p-3 rounded w-75' src={recipeImage.fields.file.url} alt={recipename} title={recipename} />}
+            {recipeImage && <img className='shadow-sm p-3 bg-light border  rounded w-75' src={recipeImage.fields.file.url} alt={recipename} title={recipename} />}
             </div>
 
             <div className="row m-3 d-flex justify-content-center">  
-                <div className="col-lg-2 mr-1 shadow-sm p-3 rounded description">
+                <div className="ingredients col-lg-2 mr-1 shadow-sm p-3 border  rounded">
                     <h5 className="pt-3 pb-2 text-left">Ingredients</h5>
                     <ul className="list-unstyled">
                         {ingredients.map((ingredient) =>
@@ -26,7 +26,7 @@ const Recipe = ({ article }) => {
                     </ul>
                 </div>
 
-                <div className="col-lg-9 ml-1 shadow-sm p-3 rounded description">
+                <div className="col-lg-9 ml-1 shadow-sm p-3 border  rounded description">
                     <h5 className="text-capitalize pt-3 pb-2">How to not prepare</h5>
                     <section dangerouslySetInnerHTML={{ __html: postDescription1 }} />
                 </div>

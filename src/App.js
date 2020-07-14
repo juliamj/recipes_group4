@@ -26,7 +26,7 @@ class App extends React.Component {
           <header>
 
           <nav className="navbar navbar-expand-lg navbar-light bg-danger">
-            <span className="navbar-brand text-uppercase text-warning">Juicy Recipes <i className="fas fa-lemon"></i></span>
+            <span className="navbar-brand text-uppercase text-warning">How Not To Cook <i className="fas fa-lemon"></i></span>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -63,7 +63,7 @@ class App extends React.Component {
             <span className="nav-link" href="#">Copyright 2020</span>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://github.com/juliamj/recipes_group4"><i className="fab fa-github-square text-warning"></i></a>
+            <a className="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/juliamj/recipes_group4"><i className="fab fa-github-square text-warning"></i></a>
           </li>
         </ul>
         </div>
