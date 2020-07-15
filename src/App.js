@@ -24,8 +24,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="">
-        <div className='container m-4'>
-          <header>
+        <div className='container m-sm-4'>
+          <header className="mx-lg-n4">
 
           <nav className="navbar navbar-expand-lg navbar-light bg-danger">
             <span className="navbar-brand text-uppercase text-warning">How Not To Cook <i className="fas fa-lemon"></i></span>
@@ -66,7 +66,7 @@ class App extends React.Component {
 
         {/* FOOTER */}
         {/* <footer class="m-4"> */}
-        <div className="mt-4">
+        <div className="mt-4 mx-lg-n4">
         <ul className="nav navbar navbar-expand-lg navbar-light bg-danger">
           <li className="nav-item">
             <span className="nav-link" href="#">Impressum</span>

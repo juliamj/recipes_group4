@@ -5,7 +5,7 @@ const About = props => {
     return (
         <div className="About">
 
-<div className='container mt-4 recipe shadow-sm border border-dark rounded'>
+<div className='container mt-4 pb-4 recipe shadow-sm border border-dark rounded'>
             <h1 className='pb-2 pt-4 text-capitalize d-flex justify-content-center text-white'>About</h1>
             {/* <hr /> */}
 
