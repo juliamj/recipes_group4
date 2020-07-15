@@ -5,20 +5,20 @@ const About = props => {
     return (
         <div className="About">
 
-<div className='container mt-4 p-5 recipe shadow-sm border border-dark rounded-circle'>
-            <h2 className='pb-2 pt-2 text-capitalize d-flex justify-content-center'>About</h2>
+<div className='container mt-4 recipe shadow-sm border border-dark rounded'>
+            <h1 className='pb-2 pt-4 text-capitalize d-flex justify-content-center text-white'>About</h1>
             {/* <hr /> */}
 
             <div className="row m-3 d-flex justify-content-center"> 
 
                 <div className="col-lg-9 shadow-sm p-4 border rounded description">
-                    <h5 className="text-capitalize pl-4 pt-3 pb-2">Authors</h5>
+                    <h2 className="text-capitalize pl-4 pt-3 pb-2">Authors</h2>
                     <ul className="pl-5">
                         <li>Madlen Engel</li>
                         <li>Julia Jannsen</li>
                         <li>Holden Madagame</li>
                     </ul>
-                    <h5 className="text-capitalize pl-4 pt-3 pb-2">Built With</h5>
+                    <h2 className="text-capitalize pl-4 pt-3 pb-2">Built With</h2>
                     <ul className="pl-5">
                         <li>Contentful</li>
                         <li>Bootstrap</li>
@@ -26,7 +26,7 @@ const About = props => {
                         <li>React.js</li>
                         <li>Create React App</li>
                     </ul>
-                    <h5 className="pl-4 text-capitalize pt-3 pb-2">Objectives</h5>
+                    <h2 className="pl-4 text-capitalize pt-3 pb-2">Objectives</h2>
                     <p className="pl-4">Build a React.js app with Contentful as the CMS</p>
                 </div>
 
