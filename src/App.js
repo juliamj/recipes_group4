@@ -66,7 +66,7 @@ class App extends React.Component {
 
         {/* FOOTER */}
         {/* <footer class="m-4"> */}
-        <div className="container m-4">
+        <div className="mt-4">
         <ul className="nav navbar navbar-expand-lg navbar-light bg-danger">
           <li className="nav-item">
             <span className="nav-link" href="#">Impressum</span>
